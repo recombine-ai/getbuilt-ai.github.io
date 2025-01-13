@@ -1,72 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Easiest way to introduce AI" />
+    <meta name="keywords" content="AI, operations, platform" />
     <title>Recombine</title>
-    <!-- Link to Roboto Mono and Roboto fonts from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #222222; 
-            color: #DDDDDD; 
-            font-family: 'Roboto Mono', monospace; /* Roboto Mono font */
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-        }
-        .container {
-            max-width: 400px; /* Limit width on desktop */
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-top: 40px;
-            flex-wrap: nowrap;
-        }
-        .logo {
-            font-size: 2em;
-            font-family: 'Roboto', sans-serif; /* Use Roboto font */
-            font-weight: 500
-        }
-        .footer div {
-            flex-shrink: 0;
-        }
-        p {
-            margin-bottom: 1.5em;
-        }
-        a {
-            color: #DDDDDD;
-            text-decoration: underline;
-            text-wrap: nowrap;
-        }
-        .footer a:hover {
-            color: #FFFFFF;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-        }
+    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    </style>
-</head>
-<body>
-    <div class="container">
-        <p>We build AI agents that talk and act like humans.</p>
-        
-        <p>We have deployed them for EU banks, global marketplace platforms and one of the largest UK fintechs.</p>
-
-        <p>If you’re looking to scale your operations without adding headcount, <a href="https://forms.gle/Tokgsb1JrTjxScb36">join the waitlist</a>.</p>
-
-        <div class="footer">
-            <div class="logo">Recombine</div>
-            <div><a href="mailto:stas@recombine.ai">Contact us</a></div>
-        </div>
+  <body class="page">
+    <div class="page__overlay">
+      <p class="overlay_text">
+        >100M humans will engage AI agents to contribute to their work by 2026
+      </p>
+      <p class="overlay_text arrow">
+        <img src="./assets/gartner.png" alt="Gartner logo" /> →
+      </p>
     </div>
-</body>
-</html>
+    <div class="page__content">
+      <!-- Header -->
+      <header class="header">
+        <p class="page__subtitle-description">Recombine</p>
+        <div class="header__menu" id="menu-toggle">☰</div>
+        <nav class="header__nav" id="nav-menu">
+          <button class="btn__close" type="button" id="btn-close"></button>
+          <ul class="header__links">
+            <li>
+              <a href="/" class="header__link disabled" data-page="index"
+                >Platform</a
+              >
+            </li>
+            <li class="header__link-dropdown">
+              <a class="header__link header__link_cases" id="dropdown-toggle">
+                Use Cases
+                <svg
+                  class="dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                >
+                  <path
+                    d="M1 1l5 5 5-5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    fill="none"
+                    stroke-linecap="square"
+                    stroke-linejoin="miter"
+                  />
+                </svg>
+              </a>
+              <ul class="header__sublinks">
+                <li>
+                  <a href="./cases/banking.html" class="header__sublink"
+                    >Banking and financial services</a
+                  >
+                </li>
+                <li>
+                  <a href="./cases/mobility.html" class="header__sublink"
+                    >Mobility & delivery, marketplace platforms</a
+                  >
+                </li>
+                <li>
+                  <a href="./cases/smb.html" class="header__sublink"
+                    >SMB-focused SaaS companies</a
+                  >
+                </li>
+                <li>
+                  <a href="./cases/insurance.html" class="header__sublink"
+                    >Insurance</a
+                  >
+                </li>
+                <li>
+                  <a href="./cases/telecom.html" class="header__sublink"
+                    >Telecom</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="resources.html" class="header__link">Resources</a>
+            </li>
+            <li>
+              <a href="about.html" class="header__link">About</a>
+            </li>
+            <li>
+              <a href="careers.html" class="header__link">Careers</a>
+            </li>
+            <li>
+              <a href="#Request" class="header__link header__link_demo"
+                >Request Demo</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Header -->
 
+      <main>
+        <section class="main">
+          <h1 class="main__title">Easiest way</h1>
+          <h1 class="main__title">to introduce AI</h1>
+          <h2 class="main__title-white">into your operations</h2>
+          <p class="main__description">
+            A platform to build and run your proprietary conversational AI
+            agents, in-cloud or on-premise. No usage fees, no vendor lock-in.
+          </p>
+          <div class="main__logos">
+            <img src="./assets/salesforce.svg" alt="Salesforce logo" />
+            <img src="./assets/google.svg" alt="Google logo" />
+            <img src="./assets/aws.svg" alt="AWS logo" />
+            <img src="./assets/intercom.svg" alt="Intercom logo" />
+            <img src="./assets/meta.svg" alt="Meta logo" />
+            <img src="./assets/open.svg" alt="Open logo" />
+            <img src="./assets/hubspot.svg" alt="Hubspot logo" />
+            <img src="./assets/twilio.svg" alt="Twilio logo" />
+          </div>
+          <div class="main__green">
+            <h3 class="page__subtitle">
+              Industry leaders trust Recombine to deliver high ROI
+            </h3>
+            <div class="main__green-cards">
+              <div class="main__green-card">
+                <span class="main__green-card-span">7500 employees</span>
+                <span class="main__green-card-span">UK</span>
+                <h3 class="main__green-subtitle">FinTech company</h3>
+                <p>
+                  AI agents automate pre-qualification checks and KYC, drive
+                  user activation with personalized offers, and assist with loan
+                  refinancing.
+                </p>
+              </div>
+              <div class="main__green-card">
+                <span class="main__green-card-span">2700 employees</span>
+                <span class="main__green-card-span">Global</span>
+                <h3 class="main__green-subtitle">Mobility platform</h3>
+                <p>
+                  AI agents handle driver acquisition, provide partner and
+                  customer support, increase driver engagement, and help reduce
+                  churn.
+                </p>
+              </div>
+              <div class="main__green-card">
+                <span class="main__green-card-span">2000 employees</span>
+                <span class="main__green-card-span">Europe</span>
+                <h3 class="main__green-subtitle">Consumer bank</h3>
+                <p>
+                  AI agents deliver personalized offers, upsell bank products,
+                  assist with loan applications, and manage pre-collection and
+                  collection tasks.
+                </p>
+              </div>
+              <div class="main__green-card">
+                <span class="main__green-card-span">1300 employees</span>
+                <span class="main__green-card-span">UK</span>
+                <h3 class="main__green-subtitle">SaaS company</h3>
+                <p>
+                  AI agents book demos, qualify incoming leads, prevent churn,
+                  handle renewals, and assist with customer support queries.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__build">
+            <h3 class="page__subtitle">Build your AI agents</h3>
+            <span class="page__subtitle-span">with extreme precision</span>
+            <ul class="main__build-points">
+              <li class="main__build-point">
+                <img
+                  src="./assets/2x.svg"
+                  alt="2x"
+                  class="main__build-point-image"
+                />
+                <p>Higher conversion rates in sales</p>
+              </li>
+              <li class="main__build-point">
+                <img
+                  src="./assets/infinity.svg"
+                  alt="Infinity"
+                  class="main__build-point-image"
+                />
+                <p>Unlimited scalability without hiring</p>
+              </li>
+              <li class="main__build-point">
+                <img
+                  src="./assets/5x.svg"
+                  alt="5x"
+                  class="main__build-point-image"
+                />
+                <p>Faster resolution times in customer support</p>
+              </li>
+              <li class="main__build-point">
+                <img
+                  src="./assets/1.25x.svg"
+                  alt="1.25x"
+                  class="main__build-point-image"
+                />
+                <p>Customer satisfaction scores compared to human agents</p>
+              </li>
+            </ul>
+          </div>
+          <div class="main__connect">
+            <h3 class="page__subtitle">
+              Connect your in-house AI agents to critical data sources and
+              communication channels
+            </h3>
+            <div class="main__connect-container">
+              <div class="main__connect-left">
+                <div class="main__connect-box">
+                  <p>Your business systems:</p>
+                  <ul>
+                    <li>Invoicing</li>
+                    <li>Admin</li>
+                    <li>Backoffice</li>
+                  </ul>
+                </div>
+                <div class="arrow arrow-left-to-center"></div>
+                <div class="main__connect-box">
+                  <p>CRMs and helpdesks:</p>
+                  <ul>
+                    <li>Salesforce</li>
+                    <li>Intercom</li>
+                    <li>In-house</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="main__connect-center">
+                <p class="main__connect-center-pre">In-cloud or on-premise</p>
+                <h3 class="page__subtitle">AI agents</h3>
+                <span class="page__subtitle-span"
+                  >on the Recombine platform</span
+                >
+                <ul class="main__connect-center-points">
+                  <li>Asynchronous engine</li>
+                  <li>Observability module</li>
+                  <li>Dynamic follow-ups and scheduling</li>
+                  <li>Guaranteed outputs schemes</li>
+                  <li>Live syncs</li>
+                  <li>Automatic retries</li>
+                  <li>Error handling</li>
+                  <li>A/B tests</li>
+                  <li>Prompt injection prevention</li>
+                  <li>Automatic flagging</li>
+                  <li>Custom rules</li>
+                  <li>Export-to-code</li>
+                </ul>
+              </div>
+              <div class="main__connect-right">
+                <ul class="main__connect-box">
+                  <li>WhatsApp</li>
+                  <li>In-app</li>
+                  <li>Email</li>
+                </ul>
+                <div class="arrow arrow-center-to-right"></div>
+                <ul class="main__connect-box">
+                  <li>Phone</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main__own">
+            <h3 class="page__subtitle">Own the IP and avoid vendor lock-in</h3>
+            <div class="main__own-quotes">
+              <blockquote class="main__own-quote">
+                <span class="main__own-quote-span">“</span>
+                <p class="page__subtitle-span-green">
+                  The Client shall have full ownership of all intellectual
+                  property developed specifically for the Client as part of the
+                  services provided under this Agreement.
+                </p>
+                <p class="main__own-quote-description">
+                  This includes: integrations with Client's data sources,
+                  integrations with Client's messengers and telephony, LLM
+                  prompts tailored to Client's use-cases, AI agent scenarios
+                  developed for Client's use-cases, and Custom modifications to
+                  the LLM integration module for Client's needs.
+                </p>
+              </blockquote>
+              <blockquote class="main__own-quote">
+                <span class="main__own-quote-span">“</span>
+                <p class="page__subtitle-span-green">
+                  The Client is granted a perpetual, non-exclusive, royalty-free
+                  license to use and modify ready-made platform components.
+                </p>
+              </blockquote>
+            </div>
+            <div class="main__own-quote-excerpts">
+              <p>Excerpts from our contract template.</p>
+            </div>
+          </div>
+          <div class="main__grid">
+            <aside class="main__aside">
+              <h3 class="page__subtitle">Scale your operations</h3>
+              <span class="main__aside-span"
+                >without scaling your headcount</span
+              >
+            </aside>
+            <div class="main__two-right">
+              <h3 id="Banking" class="page__subtitle-green">
+                <a
+                  href="./cases/banking.html"
+                  class="page__subtitle-green underlined"
+                  >Banking and financial services</a
+                >
+                →
+              </h3>
+              <ul class="main__lists">
+                <li>Upsells</li>
+                <li>Compliance checks</li>
+                <li>Customer service queries</li>
+                <li>Cross-sells</li>
+                <li>Pre-collection</li>
+                <li>Processing applications</li>
+                <li>KYC</li>
+                <li>Collection</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__mobility">
+            <div class="main__two-left">
+              <h3 id="Mobility" class="page__subtitle-green">
+                Mobility & delivery,
+              </h3>
+              <h3 class="page__subtitle-green">
+                <a
+                  href="./cases/mobility.html"
+                  class="page__subtitle-green underlined"
+                  >marketplace platforms</a
+                >
+                →
+              </h3>
+              <ul class="main__list-two">
+                <li>Partner outreach</li>
+                <li>Onboarding drivers, couriers, businesses</li>
+                <li>Meeting scheduling</li>
+                <li>Partner queries</li>
+                <li>KYC</li>
+                <li>Customer service queries</li>
+                <li>Compliance checks</li>
+                <li>Partner engagement</li>
+              </ul>
+            </div>
+            <div class="main__one-right">
+              <h3 id="SMB" class="page__subtitle-green">SMB-focused</h3>
+              <h3 class="page__subtitle-green">
+                <a
+                  href="./cases/smb.html"
+                  class="page__subtitle-green underlined"
+                  >SaaS companies</a
+                >
+                →
+              </h3>
+              <ul class="main__list-two">
+                <li>Meeting scheduling</li>
+                <li>Churn prevention</li>
+                <li>Inbound lead qualification</li>
+                <li>Renewals</li>
+                <li>Upsells</li>
+                <li>Customer service queries</li>
+                <li>Cross-sells</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__grid">
+            <div class="main__one-left">
+              <h3 id="Insurance" class="page__subtitle-green">
+                <a
+                  href="./cases/insurance.html"
+                  class="page__subtitle-green underlined"
+                  >Insurance</a
+                >
+                →
+              </h3>
+              <ul class="main__list-two">
+                <li>Customer service queries</li>
+                <li>Claim processing</li>
+                <li>KYC</li>
+                <li>Upsells</li>
+                <li>Client checks</li>
+                <li>Cross-sells</li>
+                <li>Data collection</li>
+              </ul>
+            </div>
+            <div class="main__two-right">
+              <h3 id="Telecom" class="page__subtitle-green">
+                <a
+                  href="./cases/telecom.html"
+                  class="page__subtitle-green underlined"
+                  >Telecom</a
+                >
+                →
+              </h3>
+              <ul class="main__lists">
+                <li>Upsells</li>
+                <li>Renewals</li>
+                <li>Assisting in outages</li>
+                <li>Cross-sells</li>
+                <li>Assisting in downtimes</li>
+                <li>Customer service queries</li>
+                <li>Churn prevention</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__platform">
+            <aside class="main__aside">
+              <h3 class="page__subtitle">AI agent platform</h3>
+              <span class="main__aside-span">for enterprise</span>
+              <ul class="main__lists-v">
+                <li>
+                  Build voice and text AI agents that achieve human-level
+                  success rates
+                </li>
+                <li>Scale customer operations without scaling headcount</li>
+                <li>
+                  Move past demos—see real business value safely pushed in
+                  production with Recombine
+                </li>
+              </ul>
+            </aside>
+            <div id="Request" class="main__two-right">
+              <h3 class="page__subtitle">Ready to get in touch?</h3>
+              <span class="page__subtitle-span"
+                >We're here to help transform your operations</span
+              >
+              <form class="main__form">
+                <fieldset class="form__fieldset">
+                  <label class="form__label">
+                    <span>Full name</span>
+                    <input type="text" class="form__input" />
+                  </label>
+                  <label class="form__label">
+                    <span>Company name</span>
+                    <input type="text" class="form__input" />
+                  </label>
+                  <label class="form__label">
+                    <span>Work email</span>
+                    <input type="email" class="form__input" />
+                  </label>
+                  <label class="form__label_type_checkbox">
+                    <input type="checkbox" class="form__checkbox" required />
+                    <p>
+                      I consent to the use of my personal data in accordance
+                      <a
+                        href="policy.html"
+                        class="form__label-policy underlined-small"
+                        >with the Privacy Policy</a
+                      >
+                    </p>
+                  </label>
+                  <button type="submit" class="form__button">
+                    Request Demo
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <img
+          src="./assets/recombine.svg"
+          alt="Recombine huge logo"
+          class="footer__logo"
+        />
+        <div class="footer__columns">
+          <ul>
+            <li class="footer__list">
+              <a href="policy.html" class="footer__list-link underlined-small"
+                >Policy</a
+              >
+            </li>
+            <li class="footer__list">
+              <a href="terms.html" class="footer__list-link underlined-small"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li class="footer__list">
+              <a href="cookie.html" class="footer__list-link underlined-small"
+                >Cookie Policy</a
+              ><span class="footer__list-link-span"
+                ><a href="#"></a>Manage</span
+              >
+            </li>
+            <li class="footer__list">
+              <a href="#" class="footer__list-link underlined-small">Legal</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="footer__list-item">Use cases</li>
+            <li class="footer__list">
+              <a
+                href="./cases/banking.html"
+                class="footer__list-link underlined-small"
+                >Banking and financial services</a
+              >
+            </li>
+            <li class="footer__list">
+              <a
+                href="./cases/mobility.html"
+                class="footer__list-link underlined-small"
+                >Mobility & delivery, marketplace platforms</a
+              >
+            </li>
+            <li class="footer__list">
+              <a
+                href="./cases/smb.html"
+                class="footer__list-link underlined-small"
+                >SMB-focused SaaS companies</a
+              >
+            </li>
+            <li class="footer__list">
+              <a
+                href="./cases/insurance.html"
+                class="footer__list-link underlined-small"
+                >Insurance</a
+              >
+            </li>
+            <li class="footer__list">
+              <a
+                href="./cases/telecom.html"
+                class="footer__list-link underlined-small"
+                >Telecom</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li class="footer__list">
+              <a href="index.html" class="footer__list-link underlined-small"
+                >Platform</a
+              >
+            </li>
+            <li class="footer__list">
+              <a
+                href="resources.html"
+                class="footer__list-link underlined-small"
+                >Resources</a
+              >
+            </li>
+            <li class="footer__list">
+              <a href="about.html" class="footer__list-link underlined-small"
+                >About</a
+              >
+            </li>
+            <li class="footer__list">
+              <a href="careers.html" class="footer__list-link underlined-small"
+                >Careers</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__copyright">
+            <li class="footer__list-item">&copy; Recombine 2024</li>
+            <li class="footer__list-item">London, UK</li>
+            <li class="footer__list-item">Cetinje, Montenegro</li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>

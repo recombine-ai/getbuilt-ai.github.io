@@ -1,0 +1,29 @@
+@import url(./vendor/fonts.css);
+
+.terms__subtitle {
+  font-family: "DarkerGrotesque";
+  font-size: 40px;
+  line-height: 0.9;
+  font-weight: 900;
+  margin: 36px 0 20px;
+}
+.terms__subtitle-subtitle {
+  font-family: "DarkerGrotesque";
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 36px 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .terms__subtitle {
+    font-size: 24px;
+    margin: 16px 0 8px;
+  }
+  .terms__subtitle-subtitle {
+    font-size: 24px;
+    line-height: 0.9;
+    margin: 24px 0 16px;
+  }
+}

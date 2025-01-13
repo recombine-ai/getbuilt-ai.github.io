@@ -1,0 +1,38 @@
+@import url(./vendor/fonts.css);
+
+.not-found {
+  background-image: url(../assets/404back.png);
+  background-size: cover;
+  height: 65vh;
+  padding: 16px;
+}
+.not-found__title {
+  font-family: "DarkerGrotesque";
+  font-size: 140px;
+  line-height: 0.9;
+  font-weight: 300;
+  color: #ddd;
+  margin-top: 130px;
+}
+.back-to-main {
+  background-color: #ddd;
+  text-decoration: none;
+  color: #222;
+  padding: 4px 16px 10px;
+  margin: 16px 0 70px;
+  width: fit-content;
+  border-radius: 10px;
+  font-family: "DarkerGrotesque";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .not-found {
+    background-image: url(../assets/404back.png);
+    padding: 14px 40px 50px;
+    height: 100%;
+  }
+}

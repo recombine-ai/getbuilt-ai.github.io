@@ -1,0 +1,125 @@
+@import url(./vendor/fonts.css);
+
+.about-container {
+  position: relative;
+  border-radius: 10px;
+  padding: 30px 30px 70px;
+  margin-bottom: 80px;
+  height: 570px;
+  align-content: end;
+}
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/about.jpg) no-repeat center top / cover;
+  border-radius: 10px;
+  opacity: 0.45;
+  z-index: -1;
+}
+.title {
+  font-family: "DarkerGrotesque";
+  font-size: 120px;
+  line-height: 0.8;
+  font-weight: 700;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+.green-box {
+  background: linear-gradient(34.98deg, #05433c 1.17%, #034c3b 42.17%);
+}
+.about__two-one {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: space-between;
+  color: #ffffff;
+  text-align: left;
+  margin: 20px 0;
+}
+.about__columns {
+  display: flex;
+  flex-direction: row;
+  justify-self: left;
+  gap: 80px;
+  margin-top: 45px;
+}
+.about__column li {
+  margin-bottom: 10px;
+}
+.about__text {
+  margin-top: 50px;
+  text-wrap-style: balance;
+}
+.no-margin {
+  margin: 0;
+}
+.about__logos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 40px;
+}
+.balance {
+  text-wrap-style: balance;
+}
+.break {
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about-container {
+    padding: 16px 16px 36px;
+    margin-bottom: 30px;
+    height: auto;
+    align-content: end;
+    aspect-ratio: 1 / 1;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 16px;
+  }
+  .title-container {
+    padding: 140px 16px 36px;
+    margin-bottom: 30px;
+    height: auto;
+    align-content: end;
+  }
+  .about__two-one {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .about__logos {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .about__logo-AWS {
+    transform: scale(0.9);
+    transform-origin: left;
+  }
+  .about__logo-Cloud {
+    transform: scale(0.8);
+    transform-origin: left;
+  }
+  .about__logo-Azure {
+    transform: scale(0.7);
+    transform-origin: left;
+  }
+  .about__text {
+    margin-top: 30px;
+    text-wrap-style: pretty;
+  }
+}
