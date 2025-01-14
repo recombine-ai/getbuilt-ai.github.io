@@ -16,7 +16,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .terms__subtitle {
     font-size: 24px;
     margin: 16px 0 8px;

@@ -6,14 +6,8 @@
     <meta name="description" content="Easiest way to introduce AI" />
     <meta name="keywords" content="AI, operations, platform" />
     <title>Recombine</title>
-    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&family=Darker+Grotesque:wght@300..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body class="page">
@@ -21,14 +15,16 @@
       <p class="overlay_text">
         >100M humans will engage AI agents to contribute to their work by 2026
       </p>
-      <p class="overlay_text arrow">
+      <p class="overlay_text text-arrow">
         <img src="./assets/gartner.png" alt="Gartner logo" /> →
       </p>
     </div>
     <div class="page__content">
       <!-- Header -->
       <header class="header">
-        <p class="page__subtitle-description">Recombine</p>
+        <p class="page__subtitle-description">
+          <a class="logo__link" href="/">Recombine</a>
+        </p>
         <div class="header__menu" id="menu-toggle">☰</div>
         <nav class="header__nav" id="nav-menu">
           <button class="btn__close" type="button" id="btn-close"></button>
@@ -107,8 +103,7 @@
 
       <main>
         <section class="main">
-          <h1 class="main__title">Easiest way</h1>
-          <h1 class="main__title">to introduce AI</h1>
+          <h1 class="main__title">Easiest way<br />to introduce AI</h1>
           <h2 class="main__title-white">into your operations</h2>
           <p class="main__description">
             A platform to build and run your proprietary conversational AI
@@ -214,8 +209,11 @@
               communication channels
             </h3>
             <div class="main__connect-container">
+              <div class="bracket-left"></div>
+              <div class="arrow-shaft"></div>
+              <div class="bracket-left-two"></div>
               <div class="main__connect-left">
-                <div class="main__connect-box">
+                <div class="main__connect-left-box">
                   <p>Your business systems:</p>
                   <ul>
                     <li>Invoicing</li>
@@ -223,8 +221,7 @@
                     <li>Backoffice</li>
                   </ul>
                 </div>
-                <div class="arrow arrow-left-to-center"></div>
-                <div class="main__connect-box">
+                <div class="main__connect-left-box">
                   <p>CRMs and helpdesks:</p>
                   <ul>
                     <li>Salesforce</li>
@@ -254,16 +251,20 @@
                   <li>Export-to-code</li>
                 </ul>
               </div>
+              <div class="bracket-right"></div>
               <div class="main__connect-right">
-                <ul class="main__connect-box">
-                  <li>WhatsApp</li>
-                  <li>In-app</li>
-                  <li>Email</li>
-                </ul>
-                <div class="arrow arrow-center-to-right"></div>
-                <ul class="main__connect-box">
-                  <li>Phone</li>
-                </ul>
+                <div class="main__connect-right-box">
+                  <ul>
+                    <li>WhatsApp</li>
+                    <li>In-app</li>
+                    <li>Email</li>
+                  </ul>
+                </div>
+                <div class="main__connect-right-box">
+                  <ul>
+                    <li>Phone</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -305,14 +306,14 @@
               >
             </aside>
             <div class="main__two-right">
-              <h3 id="Banking" class="page__subtitle-green">
-                <a
-                  href="./cases/banking.html"
-                  class="page__subtitle-green underlined"
-                  >Banking and financial services</a
-                >
+              <a
+                href="./cases/banking.html"
+                id="Banking"
+                class="page__subtitle-green"
+              >
+                <span class="underlined">Banking and financial services</span>
                 →
-              </h3>
+              </a>
               <ul class="main__lists">
                 <li>Upsells</li>
                 <li>Compliance checks</li>
@@ -327,17 +328,15 @@
           </div>
           <div class="main__mobility">
             <div class="main__two-left">
-              <h3 id="Mobility" class="page__subtitle-green">
-                Mobility & delivery,
-              </h3>
-              <h3 class="page__subtitle-green">
-                <a
-                  href="./cases/mobility.html"
-                  class="page__subtitle-green underlined"
-                  >marketplace platforms</a
-                >
+              <a
+                href="./cases/mobility.html"
+                id="Mobility"
+                class="page__subtitle-green"
+              >
+                Mobility & delivery, <br />
+                <span class="underlined">marketplace platforms</span>
                 →
-              </h3>
+              </a>
               <ul class="main__list-two">
                 <li>Partner outreach</li>
                 <li>Onboarding drivers, couriers, businesses</li>
@@ -350,15 +349,11 @@
               </ul>
             </div>
             <div class="main__one-right">
-              <h3 id="SMB" class="page__subtitle-green">SMB-focused</h3>
-              <h3 class="page__subtitle-green">
-                <a
-                  href="./cases/smb.html"
-                  class="page__subtitle-green underlined"
-                  >SaaS companies</a
-                >
+              <a href="./cases/smb.html" id="SMB" class="page__subtitle-green"
+                >SMB-focused <br />
+                <span class="underlined">SaaS companies</span>
                 →
-              </h3>
+              </a>
               <ul class="main__list-two">
                 <li>Meeting scheduling</li>
                 <li>Churn prevention</li>
@@ -372,14 +367,14 @@
           </div>
           <div class="main__grid">
             <div class="main__one-left">
-              <h3 id="Insurance" class="page__subtitle-green">
-                <a
-                  href="./cases/insurance.html"
-                  class="page__subtitle-green underlined"
-                  >Insurance</a
-                >
+              <a
+                href="./cases/insurance.html"
+                id="Insurance"
+                class="page__subtitle-green"
+              >
+                <span class="underlined">Insurance</span>
                 →
-              </h3>
+              </a>
               <ul class="main__list-two">
                 <li>Customer service queries</li>
                 <li>Claim processing</li>
@@ -391,14 +386,14 @@
               </ul>
             </div>
             <div class="main__two-right">
-              <h3 id="Telecom" class="page__subtitle-green">
-                <a
-                  href="./cases/telecom.html"
-                  class="page__subtitle-green underlined"
-                  >Telecom</a
-                >
+              <a
+                href="./cases/telecom.html"
+                id="Telecom"
+                class="page__subtitle-green"
+              >
+                <span class="underlined">Telecom</span>
                 →
-              </h3>
+              </a>
               <ul class="main__lists">
                 <li>Upsells</li>
                 <li>Renewals</li>
@@ -493,7 +488,11 @@
               >
             </li>
             <li class="footer__list">
-              <a href="#" class="footer__list-link underlined-small">Legal</a>
+              <a
+                href="mailto:legal@recombine.ai"
+                class="footer__list-link underlined-small"
+                >Legal</a
+              >
             </li>
           </ul>
           <ul>

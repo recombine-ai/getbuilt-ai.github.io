@@ -6,6 +6,13 @@
   src: url("./fonts/Alegreya-Italic.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Alegreya";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/Alegreya-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
   font-family: "DarkerGrotesque";
   font-style: normal;
   font-weight: 900;
@@ -31,12 +38,19 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("./fonts/DarkerGrotesque-Medium.ttf") format("ttf");
+  src: url("./fonts/DarkerGrotesque-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DarkerGrotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/DarkerGrotesque-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "DarkerGrotesque";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("./fonts/DarkerGrotesque-Light.ttf") format("ttf");
+  src: url("./fonts/DarkerGrotesque-Light.ttf") format("truetype");
 }

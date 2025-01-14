@@ -60,7 +60,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .careers__title-container {
     padding: 0 16px 36px;
     margin-bottom: 30px;
