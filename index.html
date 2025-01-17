@@ -8,18 +8,37 @@
     <title>Recombine</title>
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <style>
+      .page__content {
+        padding-top: 0;
+      }
+      .header__nav--active {
+        margin-top: 54px;
+      }
+      @media (min-width: 768px) and (max-width: 1360px) {
+        .page__content {
+          padding-top: 0;
+        }
+      }
+      @media (max-width: 768px) {
+        .page__content {
+          padding: 0 16px;
+        }
+      }
+    </style>
   </head>
 
   <body class="page">
-    <div class="page__overlay">
-      <p class="overlay_text">
-        >100M humans will engage AI agents to contribute to their work by 2026
-      </p>
-      <p class="overlay_text text-arrow">
-        <img src="./assets/gartner.png" alt="Gartner logo" /> →
-      </p>
-    </div>
     <div class="page__content">
+      <div class="page__overlay">
+        <p class="overlay_text">
+          >100M humans will engage AI agents to contribute to their work by 2026
+        </p>
+        <p class="overlay_text text-arrow">
+          <img src="./assets/gartner.png" alt="Gartner logo" /> →
+        </p>
+      </div>
       <!-- Header -->
       <header class="header">
         <p class="page__subtitle-description">
@@ -110,14 +129,18 @@
             agents, in-cloud or on-premise. No usage fees, no vendor lock-in.
           </p>
           <div class="main__logos">
-            <img src="./assets/salesforce.svg" alt="Salesforce logo" />
-            <img src="./assets/google.svg" alt="Google logo" />
-            <img src="./assets/aws.svg" alt="AWS logo" />
-            <img src="./assets/intercom.svg" alt="Intercom logo" />
-            <img src="./assets/meta.svg" alt="Meta logo" />
-            <img src="./assets/open.svg" alt="Open logo" />
-            <img src="./assets/hubspot.svg" alt="Hubspot logo" />
-            <img src="./assets/twilio.svg" alt="Twilio logo" />
+            <img
+              src="./assets/salesforce.png"
+              class="w60"
+              alt="Salesforce logo"
+            />
+            <img src="./assets/google.png" class="w90" alt="Google logo" />
+            <img src="./assets/aws.png" class="w60" alt="AWS logo" />
+            <img src="./assets/intercom.png" class="w140" alt="Intercom logo" />
+            <img src="./assets/meta.png" class="w110" alt="Meta logo" />
+            <img src="./assets/open.png" class="w120" alt="Open logo" />
+            <img src="./assets/hubspot.png" class="w110" alt="Hubspot logo" />
+            <img src="./assets/twilio.png" class="w100" alt="Twilio logo" />
           </div>
           <div class="main__green">
             <h3 class="page__subtitle">
@@ -203,67 +226,73 @@
               </li>
             </ul>
           </div>
-          <div class="main__connect">
+          <div class="main-connect">
             <h3 class="page__subtitle">
               Connect your in-house AI agents to critical data sources and
               communication channels
             </h3>
-            <div class="main__connect-container">
-              <div class="bracket-left"></div>
-              <div class="arrow-shaft"></div>
-              <div class="bracket-left-two"></div>
-              <div class="main__connect-left">
-                <div class="main__connect-left-box">
-                  <p>Your business systems:</p>
-                  <ul>
-                    <li>Invoicing</li>
-                    <li>Admin</li>
-                    <li>Backoffice</li>
+            <div class="main-connect__container">
+              <div class="main-connect__container-inner">
+                <div class="main-connect__bracket"></div>
+                <div class="main-connect__arrow-shaft"></div>
+                <div class="main-connect__outer-shafts"></div>
+                <div class="main-connect__systems">
+                  <div class="main-connect__systems-box">
+                    <p>Your business systems:</p>
+                    <ul>
+                      <li>Invoicing</li>
+                      <li>Admin</li>
+                      <li>Backoffice</li>
+                    </ul>
+                  </div>
+                  <div class="main-connect__systems-box">
+                    <p>CRMs and helpdesks:</p>
+                    <ul>
+                      <li>Salesforce</li>
+                      <li>Intercom</li>
+                      <li>In-house</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-connect__center">
+                  <p class="main-connect__center-pre">In-cloud or on-premise</p>
+                  <h3 class="page__subtitle">AI agents</h3>
+                  <h4 class="page__subtitle-span main-connect__subtitle">
+                    on the Recombine platform
+                  </h4>
+                  <ul class="main-connect__center-points">
+                    <li>Asynchronous engine</li>
+                    <li>Observability module</li>
+                    <li>Dynamic follow-ups and scheduling</li>
+                    <li>Guaranteed outputs schemes</li>
+                    <li>Live syncs</li>
+                    <li>Automatic retries</li>
+                    <li>Error handling</li>
+                    <li>A/B tests</li>
+                    <li>Prompt injection prevention</li>
+                    <li>Automatic flagging</li>
+                    <li>Custom rules</li>
+                    <li>Export-to-code</li>
                   </ul>
                 </div>
-                <div class="main__connect-left-box">
-                  <p>CRMs and helpdesks:</p>
-                  <ul>
-                    <li>Salesforce</li>
-                    <li>Intercom</li>
-                    <li>In-house</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="main__connect-center">
-                <p class="main__connect-center-pre">In-cloud or on-premise</p>
-                <h3 class="page__subtitle">AI agents</h3>
-                <span class="page__subtitle-span"
-                  >on the Recombine platform</span
-                >
-                <ul class="main__connect-center-points">
-                  <li>Asynchronous engine</li>
-                  <li>Observability module</li>
-                  <li>Dynamic follow-ups and scheduling</li>
-                  <li>Guaranteed outputs schemes</li>
-                  <li>Live syncs</li>
-                  <li>Automatic retries</li>
-                  <li>Error handling</li>
-                  <li>A/B tests</li>
-                  <li>Prompt injection prevention</li>
-                  <li>Automatic flagging</li>
-                  <li>Custom rules</li>
-                  <li>Export-to-code</li>
-                </ul>
-              </div>
-              <div class="bracket-right"></div>
-              <div class="main__connect-right">
-                <div class="main__connect-right-box">
-                  <ul>
-                    <li>WhatsApp</li>
-                    <li>In-app</li>
-                    <li>Email</li>
-                  </ul>
-                </div>
-                <div class="main__connect-right-box">
-                  <ul>
-                    <li>Phone</li>
-                  </ul>
+                <div class="main-connect__contacts-shafts"></div>
+                <div class="main-connect__contacts">
+                  <div
+                    class="main-connect__contacts-box main-connect__contacts-box--messengers"
+                  >
+                    <ul>
+                      <li>WhatsApp</li>
+                      <li>In-app</li>
+                      <li>Email</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="main-connect__contacts-box main-connect__contacts-box--telephony"
+                  >
+                    <ul>
+                      <li>Phone</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
