@@ -1,12 +1,5 @@
 @import url(./vendor/fonts.css);
 
-.header__sublink.disabled {
-  pointer-events: none;
-  cursor: default;
-  color: #00b58a;
-  position: relative;
-  border-bottom: #00b58a 1px solid;
-}
 .cases__title-container {
   position: relative;
   border-radius: 10px;
@@ -29,14 +22,14 @@
 }
 .cases__article {
   background-color: #1d1d1d;
-  border: 1px solid #272727;
+  border: #272727 1px solid;
   border-radius: 10px;
   margin: 20px 0;
   padding: 30px 30px 70px;
 }
 .cases__text {
   margin-top: 50px;
-  text-wrap-style: balance;
+  max-width: 95%;
 }
 .cases__grid {
   display: grid;
@@ -59,7 +52,8 @@
   margin-top: 20px;
 }
 .case__aside {
-  background-color: #034c3b;
+  background: linear-gradient(34.98deg, #05433c 1.17%, #034c3b 42.17%);
+  border: #045743 1px solid;
   border-radius: 10px;
   padding: 30px 30px 70px;
   grid-column: 2 / 2;
@@ -79,6 +73,7 @@
   }
   .cases__text {
     margin-top: 30px;
+    max-width: 100%;
   }
   .cases__grid {
     display: flex;

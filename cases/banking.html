@@ -10,91 +10,102 @@
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/about.css" />
     <link rel="stylesheet" href="../styles/cases.css" />
+    <style>
+      .dropdown-arrow {
+        margin-top: 5px;
+      }
+    </style>
   </head>
 
   <body class="page">
     <div class="page__content">
       <!-- Header -->
       <header class="header">
-        <p class="page__subtitle-description">
-          <a class="logo__link" href="/">Recombine</a>
-        </p>
+        <div>
+          <p class="page__subtitle-description header__logo">
+            <a class="logo__link" href="/">Recombine</a>
+          </p>
+        </div>
         <div class="header__menu" id="menu-toggle">☰</div>
-        <nav class="header__nav" id="nav-menu">
-          <button class="btn__close" type="button" id="btn-close"></button>
-          <ul class="header__links">
-            <li>
-              <a href="../index.html" class="header__link" data-page="index"
-                >Platform</a
-              >
-            </li>
-            <li class="header__link-dropdown">
-              <a class="header__link header__link_cases" id="dropdown-toggle">
-                Use Cases
-                <svg
-                  class="dropdown-arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="6"
-                  viewBox="0 0 12 6"
+        <div class="nav__container">
+          <nav class="header__nav" id="nav-menu">
+            <button class="btn__close" type="button" id="btn-close"></button>
+            <ul class="header__links">
+              <li>
+                <a href="../index.html" class="header__link" data-page="index"
+                  >Platform</a
                 >
-                  <path
-                    d="M1 1l5 5 5-5"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    fill="none"
-                    stroke-linecap="square"
-                    stroke-linejoin="miter"
-                  />
-                </svg>
-              </a>
-              <ul class="header__sublinks">
-                <li>
-                  <a href="banking.html" class="header__sublink disabled"
-                    >Banking and financial services</a
+              </li>
+              <li class="header__link-dropdown">
+                <a class="header__link header__link_cases" id="dropdown-toggle">
+                  Use Cases
+                  <svg
+                    class="dropdown-arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="6"
+                    viewBox="0 0 12 6"
                   >
-                </li>
-                <li>
-                  <a href="mobility.html" class="header__sublink"
-                    >Mobility & delivery, marketplace platforms</a
-                  >
-                </li>
-                <li>
-                  <a href="smb.html" class="header__sublink"
-                    >SMB-focused SaaS companies</a
-                  >
-                </li>
-                <li>
-                  <a href="insurance.html" class="header__sublink">Insurance</a>
-                </li>
-                <li>
-                  <a href="telecom.html" class="header__sublink">Telecom</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="../resources.html" class="header__link">Resources</a>
-            </li>
-            <li>
-              <a href="../about.html" class="header__link">About</a>
-            </li>
-            <li>
-              <a href="../careers.html" class="header__link">Careers</a>
-            </li>
-            <li>
-              <a
-                href="../index.html#Request"
-                class="header__link header__link_demo"
-                >Request Demo</a
-              >
-            </li>
-          </ul>
-        </nav>
+                    <path
+                      d="M1 1l5 5 5-5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      stroke-linecap="square"
+                      stroke-linejoin="miter"
+                    />
+                  </svg>
+                </a>
+                <ul class="header__sublinks">
+                  <li>
+                    <a href="banking.html" class="header__sublink disabled"
+                      >Banking and financial services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mobility.html" class="header__sublink"
+                      >Mobility & delivery, marketplace platforms</a
+                    >
+                  </li>
+                  <li>
+                    <a href="smb.html" class="header__sublink"
+                      >SMB-focused SaaS companies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="insurance.html" class="header__sublink"
+                      >Insurance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="telecom.html" class="header__sublink">Telecom</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../resources.html" class="header__link">Resources</a>
+              </li>
+              <li>
+                <a href="../about.html" class="header__link">About</a>
+              </li>
+              <li>
+                <a href="../careers.html" class="header__link">Careers</a>
+              </li>
+              <li>
+                <a
+                  href="../index.html#Request"
+                  class="header__link header__link_demo"
+                  >Request Demo</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <!-- Header -->
 
       <main>
-        <section class="cases">
+        <section class="main">
           <article class="cases__title-container">
             <h2 class="title">Banking and financial services</h2>
             <p class="main__description">
@@ -183,7 +194,7 @@
               <a
                 href="../policy.html"
                 class="footer__list-link underlined-small"
-                >Policy</a
+                >Privacy Policy</a
               >
             </li>
             <li class="footer__list">

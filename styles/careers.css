@@ -22,7 +22,7 @@
 }
 .careers__text {
   margin-top: 20px;
-  text-wrap-style: balance;
+  max-width: 75%;
 }
 .text-link {
   margin-bottom: 12px;
@@ -70,7 +70,7 @@
   }
   .careers__text {
     margin-top: 16px;
-    text-wrap-style: pretty;
+    max-width: 95%;
   }
   .vacancies {
     margin: 16px 0 30px;

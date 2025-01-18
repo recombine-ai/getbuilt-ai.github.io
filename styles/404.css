@@ -3,7 +3,7 @@
 .not-found {
   background-image: url(../assets/404back.png);
   background-size: cover;
-  height: 65vh;
+  height: 60vh;
   padding: 16px;
 }
 .not-found__title {
@@ -19,9 +19,10 @@
   text-decoration: none;
   color: #222;
   padding: 4px 16px 10px;
-  margin: 16px 0 70px;
+  margin: 16px 0 60px;
   width: fit-content;
   border-radius: 10px;
+  border: #fff 1px solid;
   font-family: "DarkerGrotesque";
   font-size: 18px;
   line-height: 1.2;
@@ -34,5 +35,18 @@
     background-image: url(../assets/404back.png);
     padding: 14px 40px 50px;
     height: 100%;
+  }
+  .not-found__title {
+    font-size: 400px;
+    line-height: 0.8;
+    margin: 130px auto 40px 0;
+  }
+  .back-to-main {
+    padding: 8px 20px 12px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 700;
   }
 }

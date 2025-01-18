@@ -30,6 +30,7 @@
 }
 .green-box {
   background: linear-gradient(34.98deg, #05433c 1.17%, #034c3b 42.17%);
+  border: #045743 1px solid;
 }
 .about__two-one {
   display: grid;
@@ -62,7 +63,7 @@
 }
 .about__text {
   margin-top: 50px;
-  text-wrap-style: balance;
+  max-width: 77%;
 }
 .no-margin {
   margin: 0;
@@ -75,11 +76,14 @@
   margin-top: 50px;
   gap: 40px;
 }
-.balance {
-  text-wrap-style: balance;
+.w80 {
+  width: 80px;
 }
-.break {
-  display: inline-block;
+.w160 {
+  width: 160px;
+}
+.w240 {
+  width: 240px;
 }
 
 /* Responsive Design */
@@ -134,6 +138,15 @@
   }
   .about__text {
     margin-top: 30px;
-    text-wrap-style: pretty;
+    max-width: 100%;
+  }
+  .w80 {
+    width: 60px;
+  }
+  .w160 {
+    width: 120px;
+  }
+  .w240 {
+    width: 200px;
   }
 }

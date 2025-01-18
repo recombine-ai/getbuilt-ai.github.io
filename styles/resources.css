@@ -24,8 +24,6 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   column-gap: 50px;
-  align-items: stretch;
-  justify-content: space-between;
   margin: 80px 0;
 }
 .resources__container:last-child {
@@ -60,14 +58,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 75%;
 }
 .resources__lists-v li {
   position: relative;
   padding-left: 24px;
 }
 .resources__lists-v li::before {
-  content: "✓";
-  font-size: 20px;
+  content: url(../assets/v.svg);
   color: #ddd;
   position: absolute;
   left: 0;
@@ -110,6 +108,7 @@
   .resources__lists-v {
     margin-top: 16px;
     gap: 16px;
+    max-width: 95%;
   }
   .resources__lists-v li {
     padding-left: 16px;
