@@ -15,13 +15,7 @@
   <body class="page">
     <div class="page__content">
       <!-- Header -->
-      <header class="header">
-        <div>
-          <p class="page__subtitle-description header__logo">
-            <a class="logo__link" href="/">Recombine</a>
-          </p>
-        </div>
-        <div class="header__menu" id="menu-toggle">☰</div>
+      <div class="header">
         <div class="nav__container">
           <nav class="header__nav" id="nav-menu">
             <button class="btn__close" type="button" id="btn-close"></button>
@@ -98,6 +92,12 @@
             </ul>
           </nav>
         </div>
+      </div>
+      <header style="display: flex; justify-content: space-between">
+        <p class="page__subtitle-description header__logo">
+          <a class="logo__link" href="/">Recombine</a>
+        </p>
+        <div class="header__menu" id="menu-toggle">☰</div>
       </header>
       <!-- Header -->
 
@@ -320,7 +320,7 @@
                 are useful in the real world.
               </p>
             </div>
-            <div class="resources__logo-right">
+            <div class="resources__logo-right" style="align-content: center">
               <img
                 class="logo-h80"
                 src="./assets/princeton.png"
@@ -390,7 +390,7 @@
             </div>
             <div class="resources__logo-right">
               <img
-                class="logo-h60"
+                class="logo-h60 margin-top"
                 src="./assets/stanford.png"
                 alt="Stanford University logo"
               />
@@ -531,6 +531,6 @@
       </footer>
       <!-- Footer -->
     </div>
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

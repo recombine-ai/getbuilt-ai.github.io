@@ -13,203 +13,228 @@
 
   <body class="page">
     <section class="not-found">
-      <!-- Header -->
-      <header class="header">
-        <div>
-          <p class="page__subtitle-description header__logo">
-            <a class="logo__link" href="/">Recombine</a>
-          </p>
-        </div>
-        <div class="header__menu" id="menu-toggle">☰</div>
-        <div class="nav__container">
-          <nav class="header__nav" id="nav-menu">
-            <button class="btn__close" type="button" id="btn-close"></button>
-            <ul class="header__links">
-              <li>
-                <a href="/" class="header__link" data-page="index">Platform</a>
-              </li>
-              <li class="header__link-dropdown">
-                <a class="header__link header__link_cases" id="dropdown-toggle">
-                  Use Cases
-                  <svg
-                    class="dropdown-arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="6"
-                    viewBox="0 0 12 6"
-                  >
-                    <path
-                      d="M1 1l5 5 5-5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      fill="none"
-                      stroke-linecap="square"
-                      stroke-linejoin="miter"
-                    />
-                  </svg>
-                </a>
-                <ul class="header__sublinks">
+      <div class="background">
+        <div class="page__content">
+          <!-- Header -->
+          <div class="header">
+            <div class="nav__container">
+              <nav class="header__nav" id="nav-menu">
+                <button
+                  class="btn__close"
+                  type="button"
+                  id="btn-close"
+                ></button>
+                <ul class="header__links">
                   <li>
-                    <a href="./cases/banking.html" class="header__sublink"
-                      >Banking and financial services</a
+                    <a href="/" class="header__link" data-page="index"
+                      >Platform</a
                     >
                   </li>
-                  <li>
-                    <a href="./cases/mobility.html" class="header__sublink"
-                      >Mobility & delivery, marketplace platforms</a
+                  <li class="header__link-dropdown">
+                    <a
+                      class="header__link header__link_cases"
+                      id="dropdown-toggle"
                     >
+                      Use Cases
+                      <svg
+                        class="dropdown-arrow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="6"
+                        viewBox="0 0 12 6"
+                      >
+                        <path
+                          d="M1 1l5 5 5-5"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          fill="none"
+                          stroke-linecap="square"
+                          stroke-linejoin="miter"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="header__sublinks">
+                      <li>
+                        <a href="./cases/banking.html" class="header__sublink"
+                          >Banking and financial services</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./cases/mobility.html" class="header__sublink"
+                          >Mobility & delivery, marketplace platforms</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./cases/smb.html" class="header__sublink"
+                          >SMB-focused SaaS companies</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./cases/insurance.html" class="header__sublink"
+                          >Insurance</a
+                        >
+                      </li>
+                      <li>
+                        <a href="./cases/telecom.html" class="header__sublink"
+                          >Telecom</a
+                        >
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    <a href="./cases/smb.html" class="header__sublink"
-                      >SMB-focused SaaS companies</a
-                    >
+                    <a href="resources.html" class="header__link">Resources</a>
                   </li>
                   <li>
-                    <a href="./cases/insurance.html" class="header__sublink"
-                      >Insurance</a
-                    >
+                    <a href="about.html" class="header__link">About</a>
                   </li>
                   <li>
-                    <a href="./cases/telecom.html" class="header__sublink"
-                      >Telecom</a
+                    <a href="careers.html" class="header__link">Careers</a>
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#Request"
+                      class="header__link header__link_demo"
+                      >Request Demo</a
                     >
                   </li>
                 </ul>
-              </li>
-              <li>
-                <a href="resources.html" class="header__link">Resources</a>
-              </li>
-              <li>
-                <a href="about.html" class="header__link">About</a>
-              </li>
-              <li>
-                <a href="careers.html" class="header__link">Careers</a>
-              </li>
-              <li>
-                <a
-                  href="index.html#Request"
-                  class="header__link header__link_demo"
-                  >Request Demo</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- Header -->
+              </nav>
+            </div>
+          </div>
+          <header style="display: flex; justify-content: space-between">
+            <p class="page__subtitle-description header__logo">
+              <a class="logo__link" href="/">Recombine</a>
+            </p>
+            <div class="header__menu" id="menu-toggle">☰</div>
+          </header>
+          <!-- Header -->
 
-      <main class="main">
-        <h1 class="not-found__title">404</h1>
-        <h3 class="page__subtitle">This page doesn’t exist in our reality.</h3>
-        <h2 class="main__green-subtitle">It’s a glitch in the matrix.</h2>
-        <a href="index.html" class="back-to-main">Back to Main</a>
-      </main>
+          <main class="main">
+            <h1 class="not-found__title">404</h1>
+            <h3 class="page__subtitle">
+              This page doesn’t exist in our reality.
+            </h3>
+            <h2 class="main__green-subtitle">It’s a glitch in the matrix.</h2>
+            <a href="index.html" class="back-to-main">Back to Main</a>
+          </main>
 
-      <!-- Footer -->
-      <footer class="footer">
-        <img
-          src="./assets/recombine.svg"
-          alt="Recombine huge logo"
-          class="footer__logo"
-        />
-        <div class="footer__columns">
-          <ul>
-            <li class="footer__list">
-              <a href="policy.html" class="footer__list-link underlined-small"
-                >Privacy Policy</a
-              >
-            </li>
-            <li class="footer__list">
-              <a href="terms.html" class="footer__list-link underlined-small"
-                >Terms and Conditions</a
-              >
-            </li>
-            <li class="footer__list">
-              <a href="cookie.html" class="footer__list-link underlined-small"
-                >Cookie Policy</a
-              ><span class="footer__list-link-span"
-                ><a href="#"></a>Manage</span
-              >
-            </li>
-            <li class="footer__list">
-              <a
-                href="mailto:legal@recombine.ai"
-                class="footer__list-link underlined-small"
-                >Legal</a
-              >
-            </li>
-          </ul>
-          <ul>
-            <li class="footer__list-item">Use cases</li>
-            <li class="footer__list">
-              <a
-                href="./cases/banking.html"
-                class="footer__list-link underlined-small"
-                >Banking and financial services</a
-              >
-            </li>
-            <li class="footer__list">
-              <a
-                href="./cases/mobility.html"
-                class="footer__list-link underlined-small"
-                >Mobility & delivery, marketplace platforms</a
-              >
-            </li>
-            <li class="footer__list">
-              <a
-                href="./cases/smb.html"
-                class="footer__list-link underlined-small"
-                >SMB-focused SaaS companies</a
-              >
-            </li>
-            <li class="footer__list">
-              <a
-                href="./cases/insurance.html"
-                class="footer__list-link underlined-small"
-                >Insurance</a
-              >
-            </li>
-            <li class="footer__list">
-              <a
-                href="./cases/telecom.html"
-                class="footer__list-link underlined-small"
-                >Telecom</a
-              >
-            </li>
-          </ul>
-          <ul>
-            <li class="footer__list">
-              <a href="/" class="footer__list-link underlined-small"
-                >Platform</a
-              >
-            </li>
-            <li class="footer__list">
-              <a
-                href="resources.html"
-                class="footer__list-link underlined-small"
-                >Resources</a
-              >
-            </li>
-            <li class="footer__list">
-              <a href="about.html" class="footer__list-link underlined-small"
-                >About</a
-              >
-            </li>
-            <li class="footer__list">
-              <a href="careers.html" class="footer__list-link underlined-small"
-                >Careers</a
-              >
-            </li>
-          </ul>
-          <ul class="footer__copyright">
-            <li class="footer__list-item">&copy; Recombine 2024</li>
-            <li class="footer__list-item">London, UK</li>
-            <li class="footer__list-item">Cetinje, Montenegro</li>
-          </ul>
+          <!-- Footer -->
+          <footer class="footer">
+            <img
+              src="./assets/recombine.svg"
+              alt="Recombine huge logo"
+              class="footer__logo"
+            />
+            <div class="footer__columns">
+              <ul>
+                <li class="footer__list">
+                  <a
+                    href="policy.html"
+                    class="footer__list-link underlined-small"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="terms.html"
+                    class="footer__list-link underlined-small"
+                    >Terms and Conditions</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="cookie.html"
+                    class="footer__list-link underlined-small"
+                    >Cookie Policy</a
+                  ><span class="footer__list-link-span"
+                    ><a href="#"></a>Manage</span
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="mailto:legal@recombine.ai"
+                    class="footer__list-link underlined-small"
+                    >Legal</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li class="footer__list-item">Use cases</li>
+                <li class="footer__list">
+                  <a
+                    href="./cases/banking.html"
+                    class="footer__list-link underlined-small"
+                    >Banking and financial services</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="./cases/mobility.html"
+                    class="footer__list-link underlined-small"
+                    >Mobility & delivery, marketplace platforms</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="./cases/smb.html"
+                    class="footer__list-link underlined-small"
+                    >SMB-focused SaaS companies</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="./cases/insurance.html"
+                    class="footer__list-link underlined-small"
+                    >Insurance</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="./cases/telecom.html"
+                    class="footer__list-link underlined-small"
+                    >Telecom</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li class="footer__list">
+                  <a href="/" class="footer__list-link underlined-small"
+                    >Platform</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="resources.html"
+                    class="footer__list-link underlined-small"
+                    >Resources</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="about.html"
+                    class="footer__list-link underlined-small"
+                    >About</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="careers.html"
+                    class="footer__list-link underlined-small"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__copyright">
+                <li class="footer__list-item">&copy; Recombine 2024</li>
+                <li class="footer__list-item">London, UK</li>
+                <li class="footer__list-item">Cetinje, Montenegro</li>
+              </ul>
+            </div>
+          </footer>
+          <!-- Footer -->
         </div>
-      </footer>
-      <!-- Footer -->
+      </div>
     </section>
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

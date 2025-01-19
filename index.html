@@ -16,6 +16,11 @@
       .header__nav--active {
         margin-top: 54px;
       }
+      @media (max-width: 768px) {
+        .header__nav--active {
+          margin-top: 16px;
+        }
+      }
     </style>
   </head>
 
@@ -33,20 +38,17 @@
             2026
           </p>
           <p class="overlay_text text-arrow">
-            <img src="./assets/gartner.png" alt="Gartner logo" /> →
-          </p>
-        </div></a
-      >
+            <img
+              class="hover-image"
+              src="./assets/gartner-logo.png"
+              alt="Gartner logo"
+            />
+          </p></div
+      ></a>
     </div>
     <div class="page__content">
       <!-- Header -->
-      <header class="header">
-        <div>
-          <p class="page__subtitle-description header__logo">
-            <a class="logo__link" href="/">Recombine</a>
-          </p>
-        </div>
-        <div class="header__menu" id="menu-toggle">☰</div>
+      <div class="header">
         <div class="nav__container">
           <nav class="header__nav" id="nav-menu">
             <button class="btn__close" type="button" id="btn-close"></button>
@@ -121,6 +123,12 @@
             </ul>
           </nav>
         </div>
+      </div>
+      <header style="display: flex; justify-content: space-between">
+        <p class="page__subtitle-description header__logo">
+          <a class="logo__link" href="/">Recombine</a>
+        </p>
+        <div class="header__menu" id="menu-toggle">☰</div>
       </header>
       <!-- Header -->
 
@@ -455,41 +463,76 @@
               </ul>
             </aside>
             <div id="Request" class="main__two-right">
-              <h3 class="page__subtitle">Ready to get in touch?</h3>
-              <span class="page__subtitle-span"
-                >We're here to help transform your operations</span
-              >
-              <form class="main__form">
-                <fieldset class="form__fieldset">
-                  <label class="form__label">
-                    <span>Full name</span>
-                    <input type="text" class="form__input" />
-                  </label>
-                  <label class="form__label">
-                    <span>Company name</span>
-                    <input type="text" class="form__input" />
-                  </label>
-                  <label class="form__label">
-                    <span>Work email</span>
-                    <input type="email" class="form__input" />
-                  </label>
-                  <label class="form__label_type_checkbox">
-                    <input type="checkbox" class="form__checkbox" required />
-                    <p>
-                      I consent to the use of my personal data in accordance
-                      <a
-                        href="policy.html"
-                        target="_blank"
-                        class="form__label-policy underlined-small"
-                        >with the Privacy Policy</a
-                      >
-                    </p>
-                  </label>
-                  <button type="submit" class="form__button">
-                    Request Demo
-                  </button>
-                </fieldset>
-              </form>
+              <div class="main__form-body">
+                <h3 class="page__subtitle">Ready to get in touch?</h3>
+                <span class="page__subtitle-span"
+                  >We're here to help transform your operations</span
+                >
+                <div class="main__form-container">
+                  <form class="main__form" id="request-form" novalidate>
+                    <label class="form__label">
+                      <span>Full name</span>
+                      <input type="text" name="name" class="form__input" />
+                    </label>
+                    <label class="form__label">
+                      <span>Company name</span>
+                      <input type="text" name="company" class="form__input" />
+                    </label>
+                    <label class="form__label">
+                      <span>Work email</span>
+                      <input type="email" name="email" class="form__input" />
+                    </label>
+                    <label class="form__label_type_checkbox">
+                      <input
+                        tabindex="-1"
+                        type="checkbox"
+                        name="privacy-consent"
+                        class="form__checkbox"
+                        required
+                      />
+                      <p>
+                        I consent to the use of my personal data in accordance
+                      </p>
+                    </label>
+                    <label class="form__label_type_checkbox-2">
+                      <button
+                        href="."
+                        class="form__checkbox-img"
+                        role="checkbox"
+                      ></button>
+                      <p>
+                        I consent to the use of my personal data in accordance
+                        <a
+                          href="policy.html"
+                          target="_blank"
+                          class="form__label-policy underlined-small"
+                          >with the Privacy Policy</a
+                        >
+                      </p>
+                    </label>
+                    <button type="submit" class="form__button">
+                      Request Demo
+                    </button>
+                  </form>
+                  <div class="main__form-errors">
+                    <span>Please provide:</span>
+                  </div>
+                </div>
+              </div>
+              <div class="main__form-done">
+                <h2 class="page__subtitle">Thanks for reaching out!</h2>
+                <h3 class="page__subtitle-span">We’ll get in touch soon</h3>
+                <p>
+                  We currently have a high number of applications, so it may
+                  take us a bit of time to get back to you.
+                </p>
+                <p>
+                  If you have any questions, please reach out to us directly
+                  <a href="mailto:hello@recombine.ai">
+                    at hello@recombine.ai.
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -600,6 +643,6 @@
       </footer>
       <!-- Footer -->
     </div>
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
