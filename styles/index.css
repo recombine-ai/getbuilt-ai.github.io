@@ -19,7 +19,6 @@ body {
 
 p,
 li,
-span,
 a {
   font-family: "DarkerGrotesque";
   font-size: 24px;
@@ -84,7 +83,7 @@ b {
 .page__content {
   margin: 0 auto 50px;
   max-width: 1600px;
-  padding: 0 40px 14px;
+  padding: 14px 40px;
 }
 
 .page__subtitle {
@@ -172,7 +171,7 @@ b {
   z-index: 1000;
 }
 .header__logo {
-  padding: 30px 0 0;
+  padding: 15px 0 0;
 }
 .header__logo:hover {
   color: #00b58a;
@@ -466,7 +465,7 @@ b {
 }
 
 .main__build-point-image {
-  margin-bottom: 20px;
+  margin-bottom: 207x;
 }
 
 /* Own Subsection */
@@ -710,7 +709,7 @@ b {
 /* CAPTCHA: visually hide the fake checkbox */
 .form__label_type_checkbox {
   position: absolute;
-  top: 3em;
+  top: 4em;
 }
 .form__label_type_checkbox p,
 .form__label_type_checkbox a {
@@ -726,8 +725,8 @@ b {
 
 /* CAPTCHA: draw another checkbox */
 .form__checkbox-img {
-  height: 25px;
-  width: 25px;
+  height: 24px;
+  width: 24px;
   background-size: contain;
   margin-top: 4px;
   appearance: none;
@@ -896,11 +895,10 @@ b {
   border-radius: 5px;
   border: #045743 1px solid;
   font-size: 16px;
-  line-height: 1.37;
+  line-height: 1.35;
   font-family: "DarkerGrotesque";
   font-weight: 600;
   cursor: pointer;
-  position: absolute;
 }
 .footer__list-link-span:hover {
   background-color: #05433c;
@@ -908,34 +906,22 @@ b {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1360px) {
   .main__title {
-    font-size: 60px;
+    font-size: 140px;
   }
 
   .main__title-white {
-    margin: auto auto 20px 0;
-    font-size: 46px;
-    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 100px;
   }
-}
-
-/* Responsive Design */
-@media (min-width: 768px) and (max-width: 1360px) {
-  .page__content {
-    margin: 0 0 50px;
-    padding: 14px 40px;
-  }
-
-  /* Main */
   .main__description {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 1.1;
   }
 
   .main__logos {
     margin: 40px 0 60px;
-    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
   }
@@ -946,15 +932,14 @@ b {
   }
 
   .main__build {
-    padding: 16px 16px 36px;
-    margin: 40px 0;
+    margin: 60px 0;
   }
 
   .main__build-points {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
+    gap: 30px;
   }
 
   .main__build-point {
@@ -963,14 +948,13 @@ b {
   }
 
   .main__build-point-image {
-    transform: scale(0.6);
+    transform: scale(0.7);
     -webkit-transform-origin-x: left;
     -webkit-transform-origin-y: bottom;
   }
 
   .main__own {
-    padding: 16px 16px 36px;
-    margin: 40px 0;
+    margin: 60px 0;
   }
 
   .main__own-quotes {
@@ -996,9 +980,18 @@ b {
   .main__own-quote-excerpts {
     margin-top: 30px;
   }
+  .main__platform {
+    margin-top: 60px;
+  }
+  .footer__logo {
+    padding: 100px 0 40px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 930px) {
+  .page__content {
+    padding: 24px 40px;
+  }
   /* Header */
   .header {
     margin: 0 0 44px;
@@ -1027,8 +1020,8 @@ b {
     border: none;
     height: 26px;
     width: 22px;
-    top: 24px;
-    right: 18px;
+    top: 15px;
+    right: 15px;
     padding: 0;
     cursor: pointer;
   }
@@ -1041,12 +1034,11 @@ b {
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -8px;
     width: 90vw;
     background-color: #222;
     z-index: 1000;
     padding-top: 32px;
-    left: 24px;
   }
   .top {
     top: 0;
@@ -1197,7 +1189,7 @@ b {
     border: none;
     height: 26px;
     width: 22px;
-    top: 27px;
+    top: 32px;
     right: 16px;
     padding: 0;
     cursor: pointer;
@@ -1297,7 +1289,7 @@ b {
   }
 
   .main__title-white {
-    margin: auto auto 20px 0;
+    margin-bottom: 20px;
     font-size: 46px;
     font-weight: 600;
   }
@@ -1517,6 +1509,10 @@ b {
     margin-top: 14px;
   }
 
+  .form__label_type_checkbox {
+    z-index: -1;
+  }
+
   .form__checkbox {
     width: 16px;
     height: 16px;
@@ -1528,12 +1524,16 @@ b {
     margin-top: 4px;
   }
 
-  .form__checkbox:checked::after {
+  /* .form__checkbox:checked::after {
     content: url(../assets/v-small.svg);
     left: 3px;
     top: -0.5px;
-  }
+  } */
 
+  .form__checkbox-img {
+    width: 16px;
+    height: 16px;
+  }
   .form__label-policy {
     padding-left: 0;
     font-size: 18px;

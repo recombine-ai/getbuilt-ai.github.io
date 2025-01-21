@@ -13,9 +13,6 @@
       .header {
         top: 54px;
       }
-      .header__nav--active {
-        margin-top: 54px;
-      }
       @media (max-width: 768px) {
         .header__nav--active {
           margin-top: 16px;
@@ -124,7 +121,9 @@
           </nav>
         </div>
       </div>
-      <header style="display: flex; justify-content: space-between">
+      <header
+        style="display: flex; justify-content: space-between; align-items: end"
+      >
         <p class="page__subtitle-description header__logo">
           <a class="logo__link" href="/">Recombine</a>
         </p>
@@ -528,7 +527,10 @@
                 </p>
                 <p>
                   If you have any questions, please reach out to us directly
-                  <a href="mailto:hello@recombine.ai">
+                  <a
+                    href="mailto:hello@recombine.ai"
+                    class="form__label-policy underlined-small"
+                  >
                     at hello@recombine.ai.
                   </a>
                 </p>
