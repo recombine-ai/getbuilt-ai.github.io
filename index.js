@@ -4,12 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.getElementById("btn-close");
   const dropdown = document.querySelector(".header__link-dropdown");
   const dropdownToggle = document.getElementById("dropdown-toggle");
+  const requestDemoLink = document.querySelector(".header__link_demo");
+  const mobileBackground = document.getElementById("mobile-background");
 
   menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("header__nav--active");
+    mobileBackground.style.display = "block";
+    document.body.classList.add("no-scroll");
   });
   closeBtn.addEventListener("click", () => {
     navMenu.classList.remove("header__nav--active");
+    mobileBackground.style.display = "none";
+    document.body.classList.remove("no-scroll");
   });
   document.addEventListener("click", (e) => {
     if (navMenu && !navMenu.contains(e.target) && e.target !== menuToggle) {
@@ -25,6 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   dropdown.addEventListener("mouseleave", () => {
     dropdown.classList.remove("active");
+  });
+  requestDemoLink.addEventListener("click", () => {
+    navMenu.classList.remove("header__nav--active");
+    mobileBackground.style.display = "none";
+    document.body.classList.remove("no-scroll");
   });
 
   // --------- FORM ----------------
@@ -94,20 +105,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!name.value.trim()) {
       errors.push({ text: "full name", input: name });
     }
-    if (!email.value.trim()) {
-      errors.push({ text: "work email", input: email });
-    }
     if (!company.value.trim()) {
       errors.push({ text: "company name", input: company });
     }
+    if (!email.value.trim()) {
+      errors.push({ text: "work email", input: email });
+    }
     if (!fakeCheckbox.checked && !checkbox.classList.contains("checked")) {
-      errors.push({ text: "consent", input: fakeCheckbox });
+      errors.push({ text: "consent", input: checkbox });
     }
 
     formErrors.querySelectorAll("a").forEach((el) => el.remove());
     errors.forEach((error, i) => {
       const a = document.createElement("a");
-      a.classList.add("underlined-small");
+      a.classList.add("form__underlined");
       a.href = "#";
       a.textContent = error.text + (i < errors.length - 1 ? "," : ".");
       a.addEventListener("click", (e) => {

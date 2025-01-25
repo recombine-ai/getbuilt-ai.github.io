@@ -58,6 +58,9 @@
   padding: 30px 30px 70px;
   grid-column: 2 / 2;
 }
+.max-width {
+  max-width: 80%;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -87,5 +90,14 @@
   }
   .case__aside {
     padding: 16px 16px 36px;
+  }
+  .max-width {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-width {
+    max-width: 100%;
   }
 }

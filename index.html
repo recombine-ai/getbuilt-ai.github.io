@@ -46,6 +46,11 @@
     <div class="page__content">
       <!-- Header -->
       <div class="header">
+        <div
+          class="mobile-background"
+          id="mobile-background"
+          style="margin-top: 54px"
+        ></div>
         <div class="nav__container">
           <nav class="header__nav" id="nav-menu">
             <button class="btn__close" type="button" id="btn-close"></button>
@@ -63,7 +68,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     width="12"
                     height="6"
-                    viewBox="0 0 12 6"
+                    viewBox="0 0 12 7"
                   >
                     <path
                       d="M1 1l5 5 5-5"
@@ -113,7 +118,9 @@
                 <a href="careers.html" class="header__link">Careers</a>
               </li>
               <li>
-                <a href="#Request" class="header__link header__link_demo"
+                <a
+                  href="index.html#Request"
+                  class="header__link header__link_demo"
                   >Request Demo</a
                 >
               </li>
@@ -127,7 +134,7 @@
         <p class="page__subtitle-description header__logo">
           <a class="logo__link" href="/">Recombine</a>
         </p>
-        <div class="header__menu" id="menu-toggle">☰</div>
+        <div class="header__menu" id="menu-toggle"></div>
       </header>
       <!-- Header -->
 
@@ -351,19 +358,25 @@
                 id="Banking"
                 class="page__subtitle-green"
               >
-                <span class="underlined">Banking and financial services</span>
-                →
+                <span class="underlined">Banking and financial services</span
+                >&nbsp;→&nbsp;
               </a>
-              <ul class="main__lists">
-                <li>Upsells</li>
-                <li>Compliance checks</li>
-                <li>Customer service queries</li>
-                <li>Cross-sells</li>
-                <li>Pre-collection</li>
-                <li>Processing applications</li>
-                <li>KYC</li>
-                <li>Collection</li>
-              </ul>
+              <div class="main__columns">
+                <ul class="main__three-columns">
+                  <li>Upsells</li>
+                  <li>Cross-sells</li>
+                  <li>KYC</li>
+                </ul>
+                <ul class="main__three-columns">
+                  <li>Compliance checks</li>
+                  <li>Pre-collection</li>
+                  <li>Collection</li>
+                </ul>
+                <ul class="main__three-columns">
+                  <li>Customer service queries</li>
+                  <li>Processing applications</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="main__mobility">
@@ -372,37 +385,43 @@
                 href="./cases/mobility.html"
                 id="Mobility"
                 class="page__subtitle-green"
-              >
-                Mobility & delivery, <br />
-                <span class="underlined">marketplace platforms</span>
-                →
+                ><span class="underlined"
+                  >Mobility & delivery, marketplace platforms</span
+                >&nbsp;→&nbsp;
               </a>
-              <ul class="main__list-two">
-                <li>Partner outreach</li>
-                <li>Onboarding drivers, couriers, businesses</li>
-                <li>Meeting scheduling</li>
-                <li>Partner queries</li>
-                <li>KYC</li>
-                <li>Customer service queries</li>
-                <li>Compliance checks</li>
-                <li>Partner engagement</li>
-              </ul>
+              <div class="main__columns-mobility">
+                <ul class="main__two-columns">
+                  <li>Partner outreach</li>
+                  <li>Meeting scheduling</li>
+                  <li>KYC</li>
+                  <li>Compliance checks</li>
+                </ul>
+                <ul class="main__two-columns">
+                  <li>Onboarding drivers, couriers, businesses</li>
+                  <li>Partner queries</li>
+                  <li>Customer service queries</li>
+                  <li>Partner engagement</li>
+                </ul>
+              </div>
             </div>
             <div class="main__one-right">
               <a href="./cases/smb.html" id="SMB" class="page__subtitle-green"
-                >SMB-focused <br />
-                <span class="underlined">SaaS companies</span>
-                →
-              </a>
-              <ul class="main__list-two">
-                <li>Meeting scheduling</li>
-                <li>Churn prevention</li>
-                <li>Inbound lead qualification</li>
-                <li>Renewals</li>
-                <li>Upsells</li>
-                <li>Customer service queries</li>
-                <li>Cross-sells</li>
-              </ul>
+                ><span class="underlined">SMB-focused SaaS companies</span
+                >&nbsp;→&nbsp;</a
+              >
+              <div class="main__columns">
+                <ul class="main__two-columns">
+                  <li>Meeting scheduling</li>
+                  <li>Inbound lead qualification</li>
+                  <li>Upsells</li>
+                  <li>Cross-sells</li>
+                </ul>
+                <ul class="main__two-columns">
+                  <li>Churn prevention</li>
+                  <li>Renewals</li>
+                  <li>Customer service queries</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="main__grid">
@@ -412,18 +431,21 @@
                 id="Insurance"
                 class="page__subtitle-green"
               >
-                <span class="underlined">Insurance</span>
-                →
+                <span class="underlined">Insurance</span>&nbsp;→&nbsp;
               </a>
-              <ul class="main__list-two">
-                <li>Customer service queries</li>
-                <li>Claim processing</li>
-                <li>KYC</li>
-                <li>Upsells</li>
-                <li>Client checks</li>
-                <li>Cross-sells</li>
-                <li>Data collection</li>
-              </ul>
+              <div class="main__columns">
+                <ul class="main__two-columns">
+                  <li>Customer service queries</li>
+                  <li>KYC</li>
+                  <li>Client checks</li>
+                  <li>Data collection</li>
+                </ul>
+                <ul class="main__two-columns">
+                  <li>Claim processing</li>
+                  <li>Upsells</li>
+                  <li>Cross-sells</li>
+                </ul>
+              </div>
             </div>
             <div class="main__two-right">
               <a
@@ -431,18 +453,23 @@
                 id="Telecom"
                 class="page__subtitle-green"
               >
-                <span class="underlined">Telecom</span>
-                →
+                <span class="underlined">Telecom</span>&nbsp;→&nbsp;
               </a>
-              <ul class="main__lists">
-                <li>Upsells</li>
-                <li>Renewals</li>
-                <li>Assisting in outages</li>
-                <li>Cross-sells</li>
-                <li>Assisting in downtimes</li>
-                <li>Customer service queries</li>
-                <li>Churn prevention</li>
-              </ul>
+              <div class="main__columns">
+                <ul class="main__three-columns">
+                  <li>Upsells</li>
+                  <li>Cross-sells</li>
+                  <li>Churn prevention</li>
+                </ul>
+                <ul class="main__three-columns">
+                  <li>Renewals</li>
+                  <li>Assisting in downtimes</li>
+                </ul>
+                <ul class="main__three-columns">
+                  <li>Assisting in outages</li>
+                  <li>Customer service queries</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="main__platform">
@@ -520,12 +547,14 @@
               </div>
               <div class="main__form-done">
                 <h2 class="page__subtitle">Thanks for reaching out!</h2>
-                <h3 class="page__subtitle-span">We’ll get in touch soon</h3>
-                <p>
+                <h3 class="page__subtitle-span form-subtitle">
+                  We’ll get in touch soon
+                </h3>
+                <p class="form__text">
                   We currently have a high number of applications, so it may
                   take us a bit of time to get back to you.
                 </p>
-                <p>
+                <p class="form__text">
                   If you have any questions, please reach out to us directly
                   <a
                     href="mailto:hello@recombine.ai"

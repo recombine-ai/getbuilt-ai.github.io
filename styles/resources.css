@@ -38,21 +38,21 @@
 }
 .logo-h40 {
   height: 40px;
-  margin-top: 11px;
+  margin-top: 20px;
 }
 .logo-h60 {
   height: 60px;
 }
 .margin-top {
-  margin-top: 75px;
+  margin-top: 20px;
 }
 .logo-h80 {
   height: 80px;
-  margin-top: 19px;
+  margin-top: 20px;
 }
 .logo-h100 {
   height: 100px;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .resources__text {
   margin-top: 20px;
@@ -76,6 +76,9 @@
   position: absolute;
   left: 0;
   top: 0;
+}
+.no-wrap {
+  white-space: nowrap;
 }
 
 /* Responsive Design */

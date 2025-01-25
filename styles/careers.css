@@ -41,6 +41,7 @@
 }
 .text-link:hover {
   color: #9088ff;
+  text-decoration-color: rgba(144, 136, 255, 0.2);
 }
 .vacancies {
   margin: 40px 0 80px;
