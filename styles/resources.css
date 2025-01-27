@@ -83,13 +83,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .resources__title-container {
-    padding: 16px 16px 36px;
-    margin: 66px 0 0;
-    height: auto;
-    align-content: end;
-    aspect-ratio: 1 / 1;
-  }
   .resources__container {
     display: flex;
     flex-direction: column;
@@ -132,5 +125,20 @@
   .resources__lists-v li::before {
     font-size: 12px;
     top: 5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .resources__title-container {
+    padding: 16px 16px 36px;
+    margin-bottom: 30px;
+    height: 370px;
+  }
+}
+@media (max-width: 576px) {
+  .resources__title-container {
+    padding: 16px 16px 36px;
+    margin-bottom: 30px;
+    height: auto;
+    aspect-ratio: 1/1;
   }
 }

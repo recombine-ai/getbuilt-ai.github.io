@@ -192,6 +192,10 @@
   .main-connect__bracket {
     top: 150px;
   }
+  .main-connect {
+    padding: 30px;
+    padding-bottom: 70px;
+  }
 }
 
 @media (min-width: 1024px) {

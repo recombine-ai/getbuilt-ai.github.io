@@ -31,18 +31,12 @@
 }
 @media (min-width: 768px) {
   .not-found {
-    background-image: url(../assets/404.svg);
+    background: linear-gradient(180deg, rgba(3, 76, 59, 0) 0%, #05433c 74.36%),
+      url(../assets/404.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    position: relative;
-  }
-  .background {
-    background: linear-gradient(180deg, rgba(3, 76, 59, 0) 0%, #05433c 74.36%);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 100%;
   }
   .not-found__title {
     font-size: 400px;

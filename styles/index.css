@@ -53,10 +53,10 @@ b {
   padding: 4px 0 8px 40px;
   margin: 0 auto;
 }
-.page__overlay img {
+.hover-image {
   height: 15px;
 }
-.page__overlay img.hover-image:hover {
+.hover-image:hover {
   content: url("../assets/gartner-hover.png");
 }
 .overlay_text {
@@ -64,11 +64,6 @@ b {
   font-size: 20px;
   line-height: 1.35;
   font-weight: 600;
-}
-
-.text-arrow {
-  font-weight: bold;
-  white-space: nowrap;
 }
 
 .logo__link,
@@ -1196,9 +1191,8 @@ b {
     padding: 6px 16px 12px;
   }
 
-  .page__overlay img {
-    width: 53px;
-    height: auto;
+  .hover-image {
+    height: 10px;
   }
 
   .overlay_text {
