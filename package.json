@@ -59,6 +59,7 @@
     "fraction.js": "^4.3.7",
     "glob-to-regexp": "^0.4.1",
     "graceful-fs": "^4.2.11",
+    "gsap": "^3.12.7",
     "has-flag": "^4.0.0",
     "html-loader": "^5.1.0",
     "icss-utils": "^5.1.0",
@@ -114,6 +115,5 @@
     "webpack": "^5.76.0",
     "webpack-sources": "^3.2.3",
     "yaml": "^1.10.2"
-  },
-  "devDependencies": {}
+  }
 }

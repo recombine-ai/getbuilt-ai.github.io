@@ -1,3 +1,5 @@
+// --------- Dropdown menu ----------------
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("nav-menu");
@@ -20,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", (e) => {
     if (navMenu && !navMenu.contains(e.target) && e.target !== menuToggle) {
       navMenu.classList.remove("header__nav--active");
+      mobileBackground.style.display = "none";
+      document.body.classList.remove("no-scroll");
     }
   });
 
@@ -29,9 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dropdown.querySelector(".header__link_cases").style.color = "#ddd";
     dropdown.querySelector(".dropdown-arrow").style.color = "#ddd";
   });
-  dropdown.addEventListener("mouseleave", () => {
-    dropdown.classList.remove("active");
-  });
+
   requestDemoLink.addEventListener("click", () => {
     navMenu.classList.remove("header__nav--active");
     mobileBackground.style.display = "none";
