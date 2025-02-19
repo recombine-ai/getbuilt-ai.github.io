@@ -37,7 +37,7 @@
       content="https://recombine.ai/assets/preview/og-image.jpg"
     />
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:card" content="summary" />
     <meta property="twitter:url" content="https://recombine.ai/" />
     <meta
       property="twitter:title"
@@ -51,6 +51,24 @@
       property="twitter:image"
       content="https://recombine.ai/assets/preview/twitter-card.jpg"
     />
+    <meta
+      name="google-site-verification"
+      content="wPD3QQ2uZ-bAy0giCqg_7wJiboFHDOOQRcXOtVaeIBM"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PTGCRP76");
+    </script>
+    <!-- End Google Tag Manager -->
     <style>
       html {
         background-color: #222;
@@ -67,43 +85,13 @@
     </style>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="apple-touch-icon" href="./favicon_io/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon-180.png"
+    />
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Use Cases",
-            "description": "Exponential scaling of your operations: banks, fintechs, mobility, delivery, marketplace platforms, SaaS, telecom, insurance companies",
-            "item": "https://recombine.ai/cases/banking.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Resources",
-            "description": "Reports on AI agents market and digital transformation technologies: Gartner, Deloitte, McKinsey, Accenture, PwC, Stanford",
-            "item": "https://recombine.ai/resources.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "About Us",
-            "description": "Recombine is a private AI technology company that offers software platforms and services to help public, private, and non-governmental organizations deploy and manage in-house AI agents in their operations.",
-            "item": "https://recombine.ai/about.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Careers",
-            "description": "Join Recombine to build great things together",
-            "item": "https://recombine.ai/careers.html"
-          }
-        ]
-      }
-    </script>
     <script>
       document.fonts.ready.then(() => {
         document.body.style.opacity = 1;
@@ -112,6 +100,16 @@
   </head>
 
   <body class="page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PTGCRP76"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="page__overlay">
       <a
         class="gartner__link"
@@ -144,10 +142,7 @@
             <button class="btn__close" type="button" id="btn-close"></button>
             <ul class="header__links">
               <li>
-                <a
-                  href="./index.html"
-                  class="header__link disabled"
-                  data-page="index"
+                <a href="/" class="header__link disabled" data-page="index"
                   >Platform</a
                 >
               </li>
@@ -231,12 +226,14 @@
 
       <main>
         <section class="main">
-          <h1 class="main__title">Easiest way<br />to introduce AI</h1>
-          <h2 class="main__title-white">into your operations</h2>
-          <p class="main__description">
+          <h1>
+            <span class="main__title">Easiest way<br />to introduce AI</span>
+            <span class="main__title-white">into your operations</span>
+          </h1>
+          <h2 class="main__description">
             A platform to build and run your proprietary conversational AI
             agents, in-cloud or on-premise. No usage fees, no vendor lock-in.
-          </p>
+          </h2>
           <div class="main__logos">
             <img
               src="./assets/salesforce.png"
@@ -259,7 +256,7 @@
               <div class="main__green-card">
                 <span class="main__green-card-span">7500 employees</span>
                 <span class="main__green-card-span">UK</span>
-                <h3 class="main__green-subtitle">FinTech company</h3>
+                <h4 class="main__green-subtitle">FinTech company</h4>
                 <p>
                   AI agents automate pre-qualification checks and KYC, drive
                   user activation with personalized offers, and assist with loan
@@ -269,7 +266,7 @@
               <div class="main__green-card">
                 <span class="main__green-card-span">2700 employees</span>
                 <span class="main__green-card-span">Global</span>
-                <h3 class="main__green-subtitle">Mobility platform</h3>
+                <h4 class="main__green-subtitle">Mobility platform</h4>
                 <p>
                   AI agents handle driver acquisition, provide partner and
                   customer support, increase driver engagement, and help reduce
@@ -279,7 +276,7 @@
               <div class="main__green-card">
                 <span class="main__green-card-span">2000 employees</span>
                 <span class="main__green-card-span">Europe</span>
-                <h3 class="main__green-subtitle">Consumer bank</h3>
+                <h4 class="main__green-subtitle">Consumer bank</h4>
                 <p>
                   AI agents deliver personalized offers, upsell bank products,
                   assist with loan applications, and manage pre-collection and
@@ -289,7 +286,7 @@
               <div class="main__green-card">
                 <span class="main__green-card-span">1300 employees</span>
                 <span class="main__green-card-span">UK</span>
-                <h3 class="main__green-subtitle">SaaS company</h3>
+                <h4 class="main__green-subtitle">SaaS company</h4>
                 <p>
                   AI agents book demos, qualify incoming leads, prevent churn,
                   handle renewals, and assist with customer support queries.
@@ -298,8 +295,10 @@
             </div>
           </div>
           <div class="main__build">
-            <h3 class="page__subtitle">Build your AI agents</h3>
-            <span class="page__subtitle-span">with extreme precision</span>
+            <h3>
+              <span class="page__subtitle"> Build your AI agents</span
+              ><span class="page__subtitle-span">with extreme precision</span>
+            </h3>
             <ul class="main__build-points">
               <li class="main__build-point" style="max-width: 190px">
                 <img
@@ -365,9 +364,11 @@
                 </div>
                 <div class="main-connect__center">
                   <p class="main-connect__center-pre">In-cloud or on-premise</p>
-                  <h3 class="page__subtitle">AI agents</h3>
-                  <h4 class="page__subtitle-span main-connect__subtitle">
-                    on the Recombine platform
+                  <h4 class="main-connect__subtitle">
+                    <span class="page__subtitle"> AI agents </span>
+                    <span class="page__subtitle-span">
+                      on the Recombine platform
+                    </span>
                   </h4>
                   <ul class="main-connect__center-points">
                     <li>Asynchronous engine</li>
@@ -438,21 +439,25 @@
           </div>
           <div class="main__grid">
             <aside class="main__aside">
-              <h3 class="page__subtitle">Scale your operations</h3>
-              <span class="main__aside-span"
-                >without scaling your headcount</span
-              >
+              <h3>
+                <span class="page__subtitle">Scale your operations</span>
+                <span class="main__aside-span"
+                  >without scaling your headcount</span
+                >
+              </h3>
             </aside>
             <div class="main__two-right">
-              <a
-                href="./cases/banking.html"
-                id="Banking"
-                class="page__subtitle-green"
-              >
-                <span class="underlined"
-                  >Banking and financial services&nbsp;→</span
+              <h3>
+                <a
+                  href="./cases/banking.html"
+                  id="Banking"
+                  class="page__subtitle-green"
                 >
-              </a>
+                  <span class="underlined"
+                    >Banking and financial services&nbsp;→</span
+                  >
+                </a>
+              </h3>
               <div class="main__columns">
                 <ul class="main__three-columns">
                   <li>Upsells</li>
@@ -473,14 +478,16 @@
           </div>
           <div class="main__mobility">
             <div class="main__two-left">
-              <a
-                href="./cases/mobility.html"
-                id="Mobility"
-                class="page__subtitle-green"
-                ><span class="underlined">
-                  Mobility & delivery,<br />marketplace platforms&nbsp;→</span
-                >
-              </a>
+              <h3>
+                <a
+                  href="./cases/mobility.html"
+                  id="Mobility"
+                  class="page__subtitle-green"
+                  ><span class="underlined">
+                    Mobility & delivery,<br />marketplace platforms&nbsp;→</span
+                  >
+                </a>
+              </h3>
               <div class="main__columns-mobility">
                 <ul class="main__two-columns">
                   <li>Partner outreach</li>
@@ -497,11 +504,13 @@
               </div>
             </div>
             <div class="main__one-right">
-              <a href="./cases/smb.html" id="SMB" class="page__subtitle-green"
-                ><span class="underlined"
-                  >SMB-focused <br />SaaS companies&nbsp;→</span
-                >
-              </a>
+              <h3>
+                <a href="./cases/smb.html" id="SMB" class="page__subtitle-green"
+                  ><span class="underlined"
+                    >SMB-focused <br />SaaS companies&nbsp;→</span
+                  >
+                </a>
+              </h3>
               <div class="main__columns">
                 <ul class="main__two-columns">
                   <li>Meeting scheduling</li>
@@ -519,13 +528,15 @@
           </div>
           <div class="main__grid">
             <div class="main__one-left">
-              <a
-                href="./cases/insurance.html"
-                id="Insurance"
-                class="page__subtitle-green"
-              >
-                <span class="underlined">Insurance&nbsp;→</span>
-              </a>
+              <h3>
+                <a
+                  href="./cases/insurance.html"
+                  id="Insurance"
+                  class="page__subtitle-green"
+                >
+                  <span class="underlined">Insurance&nbsp;→</span>
+                </a>
+              </h3>
               <div class="main__columns">
                 <ul class="main__two-columns">
                   <li>Customer service queries</li>
@@ -541,13 +552,15 @@
               </div>
             </div>
             <div class="main__two-right">
-              <a
-                href="./cases/telecom.html"
-                id="Telecom"
-                class="page__subtitle-green"
-              >
-                <span class="underlined">Telecom&nbsp;→</span>
-              </a>
+              <h3>
+                <a
+                  href="./cases/telecom.html"
+                  id="Telecom"
+                  class="page__subtitle-green"
+                >
+                  <span class="underlined">Telecom&nbsp;→</span>
+                </a>
+              </h3>
               <div class="main__columns">
                 <ul class="main__three-columns">
                   <li>Upsells</li>
@@ -567,8 +580,10 @@
           </div>
           <div class="main__platform">
             <aside class="main__aside">
-              <h3 class="page__subtitle">AI agent platform</h3>
-              <span class="main__aside-span">for enterprise</span>
+              <h3>
+                <span class="page__subtitle">AI agent platform</span>
+                <span class="main__aside-span">for enterprise</span>
+              </h3>
               <ul class="main__lists-v">
                 <li>
                   Build voice and text AI agents that achieve human-level
@@ -583,10 +598,12 @@
             </aside>
             <div id="Request" class="main__two-right">
               <div class="main__form-body">
-                <h3 class="page__subtitle">Ready to get in touch?</h3>
-                <span class="page__subtitle-span"
-                  >We're here to help transform your operations</span
-                >
+                <h3>
+                  <span class="page__subtitle"> Ready to get in touch?</span>
+                  <span class="page__subtitle-span"
+                    >We're here to help transform your operations</span
+                  >
+                </h3>
                 <div class="main__form-container">
                   <form class="main__form" id="request-form" novalidate>
                     <label class="form__label">
@@ -641,10 +658,10 @@
                 </div>
               </div>
               <div class="main__form-done">
-                <h2 class="page__subtitle">Thanks for reaching out!</h2>
-                <h3 class="page__subtitle-span form-subtitle">
+                <h3 class="page__subtitle">Thanks for reaching out!</h3>
+                <h4 class="page__subtitle-span form-subtitle">
                   We’ll get in touch soon
-                </h3>
+                </h4>
                 <p class="form__text">
                   We currently have a high number of applications, so it may
                   take us a bit of time to get back to you.
@@ -727,7 +744,7 @@
           </ul>
           <ul>
             <li class="footer__list">
-              <a href="index.html" class="footer__list-link"
+              <a href="/" class="footer__list-link"
                 ><span class="underlined">Platform</span></a
               >
             </li>

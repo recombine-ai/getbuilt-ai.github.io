@@ -94,6 +94,7 @@ b {
   margin-bottom: 10px;
   color: #ddd;
   opacity: 1;
+  display: block;
 }
 
 .page__subtitle-span {
@@ -357,11 +358,10 @@ b {
   line-height: 0.8;
   font-family: "Alegreya";
   color: #00b58a;
-  margin: 0;
+  display: block;
 }
 
 .main__title-white {
-  margin: auto auto 36px 0;
   font-family: "DarkerGrotesque";
   font-size: 120px;
   line-height: 0.8;
@@ -377,6 +377,7 @@ b {
   line-height: 0.9;
   font-weight: 500;
   max-width: 75%;
+  margin-top: 36px;
 }
 
 /* Logos Subsection */
@@ -966,12 +967,12 @@ b {
   }
 
   .main__title-white {
-    margin-bottom: 20px;
     font-size: 100px;
   }
   .main__description {
     font-size: 36px;
     line-height: 1.1;
+    margin-top: 20px;
   }
 
   .main__logos {
@@ -1432,7 +1433,6 @@ b {
   }
 
   .main__title-white {
-    margin-bottom: 20px;
     font-size: 46px;
     font-weight: 600;
   }
@@ -1441,6 +1441,7 @@ b {
     font-size: 24px;
     line-height: 1.1;
     max-width: 95%;
+    margin-top: 20px;
   }
 
   .main__logos {

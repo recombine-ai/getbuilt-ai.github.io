@@ -6,6 +6,7 @@
   line-height: 0.9;
   font-weight: 900;
   margin: 36px 0 20px;
+  display: block;
 }
 .terms__subtitle-subtitle {
   font-family: "DarkerGrotesque";

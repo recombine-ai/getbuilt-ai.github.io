@@ -63,10 +63,11 @@
 }
 .about__text {
   margin-top: 50px;
-  max-width: 77%;
+  max-width: 75%;
 }
 .no-margin {
   margin: 0;
+  max-width: 75%;
 }
 .about__logos {
   display: flex;
@@ -106,6 +107,9 @@
   }
   .about__text {
     margin-top: 30px;
+    max-width: 100%;
+  }
+  .no-margin {
     max-width: 100%;
   }
 }
@@ -148,6 +152,9 @@
   }
   .about__text {
     margin-top: 30px;
+    max-width: 100%;
+  }
+  .no-margin {
     max-width: 100%;
   }
   .w80 {
