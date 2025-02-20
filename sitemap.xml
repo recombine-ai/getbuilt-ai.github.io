@@ -4,15 +4,15 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://recombine.ai/about</loc>
+    <loc>https://recombine.ai/about.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://recombine.ai/resouces</loc>
+    <loc>https://recombine.ai/resouces.html</loc>
     <priority>0.8</priority>
   </url>
     <url>
-    <loc>https://recombine.ai/careers</loc>
+    <loc>https://recombine.ai/careers.html</loc>
     <priority>0.8</priority>
   </url>
     <url>
@@ -22,15 +22,12 @@
     <url>
     <loc>https://recombine.ai/cases/mobility.html</loc>
     <priority>0.6</priority></url>
-  <url>
    <url>
     <loc>https://recombine.ai/cases/smb.html</loc>
     <priority>0.6</priority></url>
-  <url>
    <url>
     <loc>https://recombine.ai/cases/insurance.html</loc>
     <priority>0.6</priority></url>
-  <url>
    <url>
     <loc>https://recombine.ai/cases/telecom.html</loc>
     <priority>0.6</priority></url>
