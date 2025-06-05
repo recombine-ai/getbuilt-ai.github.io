@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../assets/wave-about.png) no-repeat center top / cover;
+  background: url(../assets/about.jpg) no-repeat center top / cover;
   border-radius: 10px;
   opacity: 0.45;
   z-index: -1;
@@ -26,7 +26,7 @@
   line-height: 0.8;
   font-weight: 700;
   color: #ddd;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 .green-box {
   background: linear-gradient(34.98deg, #05433c 1.17%, #034c3b 42.17%);

@@ -23,7 +23,8 @@ body.no-scroll {
 
 p,
 li,
-a {
+a,
+tr {
   font-family: "DarkerGrotesque";
   font-size: 24px;
   line-height: 1.2;
@@ -40,6 +41,10 @@ a {
 strong,
 b {
   font-weight: 700;
+}
+
+i {
+  font-style: italic;
 }
 
 .page__overlay {
@@ -922,6 +927,11 @@ b {
   font-family: "DarkerGrotesque";
   font-weight: 600;
 }
+.footer__copyright .footer__list-item:nth-child(n + 2) {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
 .footer__list-link-span {
   margin-left: 12px;
   background-color: #034c3b;
@@ -1237,7 +1247,9 @@ b {
 
 @media (max-width: 768px) {
   p,
-  li {
+  li,
+  a,
+  tr {
     font-size: 18px;
   }
 
@@ -1748,13 +1760,17 @@ b {
     margin-bottom: 8px;
     font-size: 18px;
   }
+  .footer__copyright .footer__list-item:nth-child(n + 2) {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
 
   .footer__copyright {
     display: flex;
     flex-direction: column;
   }
 
-  .footer__copyright .footer__list-item:nth-child(1) {
+  /* .footer__copyright .footer__list-item:nth-child(1) {
     order: 3;
     margin-top: 8px;
   }
@@ -1765,5 +1781,5 @@ b {
 
   .footer__copyright .footer__list-item:nth-child(3) {
     order: 2;
-  }
+  } */
 }

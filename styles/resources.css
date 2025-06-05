@@ -15,7 +15,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../assets/mountain-resources.png) no-repeat center top / cover;
+  background: url(../assets/mountain-resources-min.jpg) no-repeat center top /
+    cover;
   border-radius: 10px;
   opacity: 0.45;
   z-index: -1;
@@ -39,12 +40,17 @@
   grid-column: 2 / 2;
   text-align: right;
 }
+.logo-h30 {
+  height: 30px;
+  margin: 25px 5px 5px 0;
+}
 .logo-h40 {
   height: 40px;
   margin-top: 20px;
 }
 .logo-h60 {
   height: 60px;
+  margin-top: 10px;
 }
 .margin-top {
   margin-top: 20px;
@@ -61,7 +67,8 @@
   margin-top: 20px;
   width: 95%;
 }
-.resources__lists-v {
+.resources__lists-v,
+.resources__lists {
   list-style: none;
   padding: 0;
   margin-top: 20px;
@@ -70,6 +77,7 @@
   gap: 20px;
   max-width: 75%;
 }
+
 .resources__lists-v li {
   position: relative;
   padding-left: 24px;
@@ -84,6 +92,21 @@
 .no-wrap {
   white-space: nowrap;
 }
+.table-wrapper {
+  overflow-x: auto;
+}
+.resources__table {
+  width: 75%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.resources__table th,
+.resources__table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
 /* Responsive Design */
 @media (max-width: 1360px) {
   .break {
@@ -104,6 +127,10 @@
   }
   .resources__logo-right {
     text-align: left;
+  }
+  .logo-h30 {
+    height: 18px;
+    margin-top: 0;
   }
   .logo-h40 {
     height: 25px;
